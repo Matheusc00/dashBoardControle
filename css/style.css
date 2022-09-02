@@ -1,0 +1,346 @@
+@font-face {
+    font-family: "RobotoMono";
+    src: url('/fonts/RobotoMono-Regular.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "RobotoMono";
+    src: url('/fonts/RobotoMono-Bold.ttf');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "RobotoMono";
+    src: url('/fonts/RobotoMono-Light.ttf');
+    font-weight: 300;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'RobotoMono';
+}
+
+html, body {
+    height: 100%;
+}
+
+.login {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.login-form {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-login {
+    width: 50%;
+    height: 100%;
+    background-color: #f9fafb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-login img {
+    position: relative;
+    bottom: 40px;
+}
+
+.banner-login h2 {
+    position: relative;
+    bottom: 5px;
+}
+
+.login-form-wrapper {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.login-form-wrapper button {
+    width: 100%;
+    background:linear-gradient(135deg, #9ebefb, #a777e3);
+    border: 1px solid #9ebefb;
+    color:#fff;
+}
+
+.login-form-wrapper button:hover {
+    border: none;
+    color: #fff;
+    transform: scale(1.05);
+    transition: 0.2s;
+    margin-top: 10px;
+}
+
+.login-title {
+   display: flex; 
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 20px;
+   padding: 10px 0;
+}
+
+.register-parent {
+    height: 100%;
+    padding: 0 2%;
+    background-color: #f9fafb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.register {
+    width: 100%;
+    max-width: 600px;
+    padding: 40px 30px 80px 30px;
+    background-color: #fff;
+}
+
+.register-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-title img {
+    width: 150px;
+    height: 150px;
+}
+
+.register-title h2 {
+    font-size: 20px;
+}
+
+.register, .form-group label {
+    font-size: 14px;
+}
+
+.register, .form-group input {
+    font-size: 14px;
+}
+
+.register button {
+    margin-top: 40px;
+    background:linear-gradient(135deg, #9ebefb, #a777e3);
+    color: #fff;
+    width: 100%;
+    display: block;
+    border: none;
+}
+
+.register button:hover {
+    color: #fff;
+    transform: scale(1.05);
+    transition: .2s;
+    font-size: 16px;
+    border: none;
+}
+
+div.flex-dashboard {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+sidebar {
+    display: block;
+    height: 100%;
+    width: 300px;
+    background-color: #fff;
+}
+
+main {
+    display: block;
+    height: 100%;
+    background-color: #f5f5f5;
+    width: calc(100% - 300px);
+}
+
+main .main-content {
+    padding: 30px;
+    width: 100%;
+    height: calc(100% - 90px);
+    overflow-y: auto;
+}
+
+.panel-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.panel-50 {
+    width:48%
+}
+
+.panel-row button {
+    height: 180px;
+    background:linear-gradient(135deg, #9ebefb, #a777e3);
+    font-size: 25px;
+    color: #fff;
+}
+
+.panel-row button:hover {
+    transform: scale(1.10);
+    transition: 0.2s;
+}
+
+.main-content .painel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid red;
+    margin: 10px 0;
+}
+
+.flex-dashboard header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    background-color: #fff;
+    padding: 10 30px;
+    border: 1px solid rgba(0, 0, 0, .0625);
+}
+
+.flex-dashboard header a {
+    text-decoration: none;
+    color:#72777a;
+}
+
+.flex-dashboard header a > svg {
+    color: #9ebefb;
+}
+
+sidebar .sidebar-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    height: 90px;
+    border: 1px solid rgba(0, 0, 0, .0625);
+    border-right: 0px;
+}
+
+sidebar .sidebar-title img {
+    height: 70px;
+    width: 70px;
+}
+
+sidebar .sidebar-title h2 {
+    font-size: 15px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+div.menu {
+    border-right: 1px solid rgba(0, 0, 0, .0625);
+}
+
+div.menu ul {
+    list-style: none;
+}
+
+div.menu ul li {
+    padding: 20px 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+div.menu ul li  svg {
+    color:#9ebefb;
+    font-size: 25px;
+}
+
+div.menu ul li a {
+    color:#72777a;
+    margin-left: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+div.menu ul li a:hover {
+    color:#4d4d4d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1280px) {
+    .banner-login {
+        width: 50%;
+        padding: 0 2%;
+    }
+
+    .banner-login img {
+        max-width: 400px;
+    }
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .banner-login {
+        width: 50%;
+        padding: 0 2%;
+    }
+
+    .banner-login img {
+        max-width: 200px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .banner-login {
+        display: none;
+    }
+
+    .login-form {
+        width: 100%;
+    }
+
+}
